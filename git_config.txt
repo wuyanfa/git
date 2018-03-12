@@ -17,3 +17,7 @@ git push origin master
 4. git checkout [remote branch](若分支为本地分支，则需切换到服务器的远程分支)
 
 5. git pull
+
+6. git log --pretty=online  命令显示从最近到最远的提交日志
+
+7. git reset --hard HEAD  用HEAD表示当前版本, 上一个版本就是HEAD^ , 上上一个版本就是HEAD^^
