@@ -21,3 +21,27 @@ git push origin master
 6. git log --pretty=online  命令显示从最近到最远的提交日志
 
 7. git reset --hard HEAD  用HEAD表示当前版本, 上一个版本就是HEAD^ , 上上一个版本就是HEAD^^
+
+8. git checkout -- file 可以丢弃工作区的修改
+
+9. git checkout -b dev 首先，我们创建dev分支，然后切换到dev分支
+
+10.git checkout master 可以切换回master分支
+
+查看分支：git branch
+
+创建分支：git branch <name>
+
+切换分支：git checkout <name>
+
+创建+切换分支：git checkout -b <name>
+
+合并某分支到当前分支：git merge <name>
+
+删除分支：git branch -d <name>
+
+11. git log --graph --pretty=oneline --abbrev-commit 我们用git log看看分支历史
+
+12. git remote 查看远程库的信息 , git remote -v 显示更详细的信息
+
+13. 让Git显示颜色 git config --global color.ui true
