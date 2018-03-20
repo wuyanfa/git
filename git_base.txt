@@ -9,6 +9,11 @@ git init
 2.0 添加git版本库
 vim readme.txt 
 git add readme.txt
+报错 git add -A
+warning: LF will be replaced by CRLF in file
+    The file will have its original line endings in your working directory.
+    该文件将在您的工作目录中有原始的行结束。
+
 
 2.1 文件提交到版本库
 git commit -m ‘xxxx’
