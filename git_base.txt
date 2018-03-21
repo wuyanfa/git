@@ -268,9 +268,15 @@ $ git log --graph --pretty=oneline --abbrev-commit
         git branch -d 分支名称
 
 
-    4.git 查看远程远程仓库信息
+    4.git 查看远程仓库信息 （ git remote show origin ）
         4.1 查看远程仓库地址
         git remote -v
+
+
+    5.git 拉取分支下的文件或者文件夹
+        5.1 拉取分支文件夹
+        git checkout 分支名称（master） 分支文件夹（branch ）
+
 
 
 
