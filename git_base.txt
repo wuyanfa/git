@@ -268,6 +268,11 @@ $ git log --graph --pretty=oneline --abbrev-commit
         git branch -d 分支名称
 
 
+    4.git 查看远程远程仓库信息
+        4.1 查看远程仓库地址
+        git remote -v
+
+
 
 
       
