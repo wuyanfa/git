@@ -277,6 +277,19 @@ $ git log --graph --pretty=oneline --abbrev-commit
         5.1 拉取分支文件夹
         git checkout 分支名称（master） 分支文件夹（branch ）
 
+    6.git tag 标签相关操作
+        6.1 git 创建标签
+        git tag v0.1.2-light 创建轻量标签
+        git tag -a v1.0 -m '1.0 版本' 创建附注标签
+        6.2 git 切换到标签
+        git checkout v1.0
+        6.3 git 删除标签
+        git tag -d v1.0
+        6.4 git 标签发布
+        git push origin v1.0 将v0.1.2标签提交到git服务器
+        git push origin --tags 将本地所有标签一次性提交到git服务器
+
+
 
 
 
