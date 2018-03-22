@@ -288,6 +288,26 @@ $ git log --graph --pretty=oneline --abbrev-commit
         6.4 git 标签发布
         git push origin v1.0 将v0.1.2标签提交到git服务器
         git push origin --tags 将本地所有标签一次性提交到git服务器
+    7.git log自定义格式
+        %H 提交对象（commit）的完整哈希字串
+        %h 提交对象的简短哈希字串
+        %T 树对象（tree）的完整哈希字串
+        %t 树对象的简短哈希字串
+        %P 父对象（parent）的完整哈希字串
+        %p 父对象的简短哈希字串
+        %an 作者（author）的名字
+        %ae 作者的电子邮件地址
+        %ad 作者修订日期（可以用 -date= 选项定制格式）
+        %ar 作者修订日期，按多久以前的方式显示
+        %cn 提交者(committer)的名字
+        %ce 提交者的电子邮件地址
+        %cd 提交日期
+        %cr 提交日期，按多久以前的方式显示
+        %s 提交说明
+        7.1 二进制 作者 时间 提交备注
+        git log --pretty=format:"%h - %an, %ar : %s"
+        7.2 以图表形式查看远程提交记录
+        git log --decorate --oneline --graph
 
 
 
