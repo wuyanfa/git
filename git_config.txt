@@ -32,6 +32,8 @@ IdentityFile  ~/.ssh/id_rsa
 
 
 
+
+
 查看配置
 git config --list
 
