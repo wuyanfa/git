@@ -13,13 +13,13 @@ git config --global user.name "wuyanfa"
 git config --global user.email "wuyanfa88@163.com"
 
 $ ssh-add -l
+
 Could not open a connection to your authentication agent.
 如果发现上面的提示,说明系统代理里没有任何key,执行如下操作
-exec ssh-agent bash
+ssh-agent bash --login -i
 如果系统已经有ssh-key 代理 ,执行下面的命令可以删除
 
 $ ssh-add -D
-
 
 
 $ ssh-add ~/.ssh/id_rsa_aaa
@@ -27,7 +27,7 @@ $ ssh-add ~/.ssh/id_rsa_bbb
 $ ssh-add ~/.ssh/id_rsa_ccc
 
 
-配置ssh-key config  touch config
+# 配置ssh-key config  touch config
 # 配置文件参数
 # Host : Host可以看作是一个你要识别的模式，对识别的模式，进行配置对应的的主机名和ssh文件
 # HostName : 要登录主机的主机名
@@ -41,7 +41,7 @@ User  wuyanfa
 IdentityFile  ~/.ssh/company_key
 
 Host  114.215.18.195
-HostName  github
+HostName  114.215.18.195
 User  wuyanfa
 IdentityFile  ~/.ssh/id_rsa
 
