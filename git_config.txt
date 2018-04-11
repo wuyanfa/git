@@ -104,6 +104,7 @@ git push origin master
 
 
 
+
 导出干净代码
     运行git archive --list查看支持的归档格式有tar、tgz、tar.gz、zip
 
@@ -115,4 +116,26 @@ git push origin master
     git archive -o ../git-1.4.0-docs.zip  HEAD:Documentation/
     #导出为tar.gz格式
     git archive   8996b47 | gzip > ../git-1.4.0.tar.gz
+
+
+git clone 操作详细
+
+    1.直接拉取代码 当前目录 创建目录small-program
+        git clone ssh://git@47.95.116.44:10022/php-dev/small-program.git
+    2.克隆指定分支
+        git clone -b xxx .git地址
+    3.拉取代码
+        git init
+        git remote add -f origin ssh://git@47.95.116.44:10022/php-dev/small-program.git
+        git remote add origin ssh://git@47.95.116.44:10022/php-dev/small-program.git
+        git pull origin master
+
+git remote 操作详情
+    1.添加地址
+        git remote add origin git@github.com:Liutos/foobar.git
+    2. 修改命令
+        git remote origin set-url URL
+    3.先删后加
+        git remote rm origin
+        git remote add origin git@github.com:Liutos/foobar.git
 
