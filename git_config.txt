@@ -102,3 +102,17 @@ git push origin master
 
 1. git rm  我的文件 ， git rm -r 删除文件夹
 
+
+
+导出干净代码
+    运行git archive --list查看支持的归档格式有tar、tgz、tar.gz、zip
+
+    #导出最新的版本库
+    git archive -o ../latest.zip HEAD
+    #导出指定提交记录
+    git archive -o ../git-1.4.0.tar 8996b47
+    #导出一个目录
+    git archive -o ../git-1.4.0-docs.zip  HEAD:Documentation/
+    #导出为tar.gz格式
+    git archive   8996b47 | gzip > ../git-1.4.0.tar.gz
+
