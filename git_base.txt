@@ -1,4 +1,4 @@
-﻿git 常见操作
+git 常见操作
 
 1.0 创建git版本库
 mkdir learngit
@@ -313,13 +313,7 @@ $ git log --graph --pretty=oneline --abbrev-commit
 
 
 
-查看文件diff 
-git diff # 比较当前文件和暂存区文件差异 git diff 
-git diff # 比较两次提交之间的差异 
-git diff .. # 在两个分支之间比较 
-git diff –staged # 比较暂存区和版本库差异 
-git diff –cached # 比较暂存区和版本库差异 
-git diff –stat # 仅仅比较统计信息 
+
 
 
       
