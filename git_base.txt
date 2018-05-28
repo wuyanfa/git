@@ -321,6 +321,14 @@ git diff –staged # 比较暂存区和版本库差异
 git diff –cached # 比较暂存区和版本库差异 
 git diff –stat # 仅仅比较统计信息 
 
+    8.退回版本
+	8.1 本地退回某个版本
+	 git reset --hard commit_id 
+	
+	8.2 远程退回某个版本
+	 git revert commit_id 
+	 git push origin 分支名称
+	
 
       
 
