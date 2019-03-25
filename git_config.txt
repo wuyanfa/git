@@ -2,6 +2,8 @@
 
 ssh-keygen -t rsa -C "3517656619@qq.com"
 
+测试配置秘钥是否成功
+ssh -T git@github.com
 
 git config --global user.name "wuyanfa"
 git config --global user.email "3517656619@qq.com"
